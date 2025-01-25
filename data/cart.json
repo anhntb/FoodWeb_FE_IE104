@@ -1,0 +1,53 @@
+{
+  "carts": [
+    {
+      "userId": 1,
+      "foods": [
+        {
+          "foodId": 8,
+          "quantity": 1,
+          "name": "Quẩy giòn",
+          "price": 5000,
+          "image": "../assets/food/quaygion.png"
+        },
+        {
+          "foodId": 1,
+          "quantity": 1,
+          "name": "Bánh cuốn",
+          "price": 25000,
+          "image": "../assets/food/banhcuon.jpg"
+        }
+      ]
+    },
+    {
+      "userId": 2,
+      "foods": [
+        {
+          "foodId": 2,
+          "quantity": 3,
+          "name": "Bánh ép",
+          "price": 35000,
+          "image": "../assets/food/banhep.jpg"
+        },
+        {
+          "foodId": 1,
+          "quantity": 10,
+          "name": "Bánh cuốn",
+          "price": 25000,
+          "image": "../assets/food/banhcuon.jpg"
+        },
+        {
+          "foodId": 8,
+          "quantity": 1,
+          "name": "Quẩy giòn",
+          "price": 5000,
+          "image": "../assets/food/quaygion.png"
+        }
+      ]
+    },
+    {
+      "userId": 3,
+      "foods": []
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="./dangky.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="../js/authHandler.js" defer></script>
+    <script src="../js/registerHandler.js" defer></script>
+    <script src="../js/togglePasswordVisibility.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ĐĂNG KÝ</h1>
+        <form id="registerForm">
+            <label for="username">Nhập tên đăng nhập:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Nhập mật khẩu:</label>
+            <div class="password-field">
+                <input type="password" id="password" name="password" required>
+                <i class="ri-eye-off-line toggle-password"></i>
+            </div>
+            <br>
+            <label for="confirmPassword">Nhập lại mật khẩu:</label>
+            <div class="password-field">
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <i class="ri-eye-off-line toggle-password"></i>
+            </div>
+            <br>
+            <label for="email">Nhập email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <button type="submit" id="register-btn">Đăng ký</button>
+            <div id="popup" style="display: none;">
+                <p id="popup-message"></p>
+            </div>
+            <br>
+            <p>Đã có tài khoản?
+                <a href="../dangnhap/dangnhap.html">Đăng nhập</a>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+/* Import các file css của components */
+@import url('../components/header/header.css');
+@import url('../components/footer/footer.css');
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Bắt đầu từ đây là thiết kế riêng cho từng trang*/
+#main {
+    display: grid;
+    margin: 20px 40px;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 50px;
+}
+
+/* container */
+.container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 20px;
+}
+
+.product-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 5px;
+    border: #FAB12F;
+}
+
+.product-table th {
+    background-color: #FAB12F;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Table rows */
+.product-table td {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 15px;
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+}
+
+.product-table td,
+.product-table th {
+
+    text-align: center;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.product-qty {
+    font-size: 16px;
+    color: #000;
+}
+
+.product-table tfoot td {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    padding: 15px;
+    text-align: right;
+    border-top: 2px solid #e0e0e0;
+}
+
+#total-amount-sum {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#total-amount {
+    color: #f9b233;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* user-info */
+.user-info {
+    display: grid;
+    row-gap: 30px;
+    padding: 25px 30px;
+    border: 1px solid #FAB12F;
+    ;
+    border-radius: 5px;
+    height: fit-content;
+    font-family: "Lora", serif;
+}
+
+.user-info label {
+    font-size: 18px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 35px;
+}
+
+.user-info__name,
+.user-info__address,
+.user-info__phone-number {
+    float: right;
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #FAB12F;
+    height: 35px;
+    min-width: 255px;
+}
+
+.user-info__name:focus,
+.user-info__address:focus,
+.user-info__phone-number:focus {
+    outline: none;
+}
+
+.voucher-container {
+    display: flex;
+}
+
+
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+    max-width: 260px;
+    margin-left: 10px;
+    flex: 1;
+}
+
+.dropdown-btn {
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    border: 1px solid #FAB12F;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+    min-width: 255px;
+    background-color: #fff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #FAB12F;
+    border-radius: 5px;
+    z-index: 1000;
+    max-height: 250px;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-dropdown.open .dropdown-content {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 8px 12px;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #FAB12F;
+    color: #fff;
+}
+
+.voucher-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.voucher-desc {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #f9b233;
+    margin-right: 10px;
+    font-size: 0.9em;
+}
+
+.new-price {
+    color: #f9b233;
+    font-weight: bold;
+}
+
+.payment-method {
+    display: grid;
+    row-gap: 15px;
+}
+
+.payment-method input {
+    transform: scale(1.7);
+    margin-right: 15px;
+    margin-left: 50px;
+    outline: none;
+    border: #f9b233;
+
+}
+
+.payment-method input[type="radio"] {
+    appearance: none;
+    /* Ẩn giao diện mặc định của radio */
+    width: 12px;
+    /* Kích thước nút */
+    height: 12px;
+    border: 1px solid #FAB12F;
+    /* Viền nút radio */
+    border-radius: 50%;
+    /* Bo tròn */
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.payment-method input[type="radio"]::before {
+    content: "";
+    /* Nội dung rỗng để tạo điểm đánh dấu */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    /* Kích thước điểm đánh dấu */
+    height: 6px;
+    background-color: #FAB12F;
+    /* Màu điểm đánh dấu */
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    /* Ẩn khi chưa chọn */
+    transition: transform 0.2s ease-in-out;
+}
+
+.payment-method input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+    /* Hiển thị khi được chọn */
+}
+
+/* btn-container */
+.btn-container {
+    display: flex;
+    column-gap: 30px;
+}
+
+.btn-container button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #f9b233;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-container button:hover {
+    background-color: rgb(247, 154, 16);
+
+}
+
+.btn-container button:active {
+    transform: scale(0.98);
+}
+
+.btn-container button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #FAB12F;
+    background-color: #fff;
+    border: 1px solid #FAB12F;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    font-family: lora, serif;
+}
+
+.btn-container button:disabled {
+    background-color: #eda222;
+    cursor: not-allowed;
+    color: #fff;
+}

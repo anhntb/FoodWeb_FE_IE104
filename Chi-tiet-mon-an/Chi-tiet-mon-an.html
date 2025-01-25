@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết món ăn</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="../js/loadComponents.js" defer></script>
+    <script src="../js/foodDetailHandler.js" defer></script>
+    <script src="../js/productHandler.js" defer></script>
+    <script src="../js/logoutHandler.js" defer></script>
+    <!-- Nhớ đổi tên file css tương ứng -->
+    <link rel="stylesheet" href="./Chi-tiet-mon-an.css">
+</head>
+
+<body>
+    <!-- Header(Không thay đổi phần này) -->
+    <div id="header"></div>
+
+    <!-- Main(Thay đổi phần này tùy theo trang) -->
+    <div id="main">
+        <div class="product-container">
+            <!-- Product Images -->
+            <div class="product-images">
+                <img src="../assets/food/banhcuon.jpg" alt="Product Image" class="main-image">
+            </div>
+
+            <!-- Product Details -->
+            <div class="product-details">
+                <h2 class="name"></h2>
+                <div class="rating">
+                    <span class="product-rating"></span>
+                    <span class="comment"></span> |
+                    <span class="sold"></span>
+                </div>
+                <div class="price">
+                    <span class="new-price"></span>
+                    <span class="old-price"></span>
+                </div>
+                <!-- Quantity -->
+                <div class="quantity">
+                    <p>Quantity</p>
+                    <button class="quantity-btn minus">-</button>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <button class="quantity-btn plus">+</button>
+                    <span class="remain"></span>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                    <button class="buy-now">Mua ngay</button>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="product-info">
+            <h3>Mô tả sản phẩm</h3>
+            <table>
+                <tr>
+                    <td>Danh mục</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Xuất xứ</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Hương vị</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Thành phần</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Bảo quản</td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="product-description">
+            <h3>CHI TIẾT SẢN PHẨM</h3>
+            <p></p>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section class="product-reviews">
+            <h3>ĐÁNH GIÁ SẢN PHẨM</h3>
+            <p class="review-count"></p>
+            <div class="review-list"></div>
+        </section>
+
+    </div>
+    <!-- Footer(Không thay đổi phần này) -->
+    <div id="footer"></div>
+</body>
+
+</html>

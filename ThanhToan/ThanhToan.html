@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="../js/loadComponents.js" defer></script>
+    <script src="../js/productHandler.js"></script>
+    <script src="../js/CheckoutHandler.js" type="module"></script>
+    <script src="../js/profileHandler.js" type="module"></script>
+    <script src="../js/logoutHandler.js" defer></script>
+    <!-- Nhớ đổi tên file css tương ứng -->
+    <link rel="stylesheet" href="./ThanhToan.css">
+
+</head>
+
+<body>
+<!-- Header(Không thay đổi phần này) -->
+    <div id="header"></div>
+
+<!-- Main(Thay đổi phần này tùy theo trang) -->
+    <div id="main">
+        <div class="container">
+            <table class="product-table">
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody id="checkout-items">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" id="total-amount-sum">Tổng cộng:</td>
+                        <td id="total-amount">0đ</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="user-info">
+                <h2>THÔNG TIN</h2>
+                <div>
+                    <label>Người nhận: </label>
+                    <input class="user-info__name" type="text" required>
+                </div>
+                <div>
+                    <label>Địa chỉ: </label>
+                    <input class="user-info__address" type="text" required>
+                </div>
+                <div>
+                    <label>Số điện thoại: </label>
+                    <input class="user-info__phone-number" type="tel" required>
+                </div>
+                <div class="voucher-container">
+                    <label>Mã giảm giá: </label>
+                    <div class="custom-dropdown">
+                        <button class="dropdown-btn">Chọn mã giảm giá <i class="ri-arrow-down-s-line"></i></button>
+                        <div class="dropdown-content" id="voucher-dropdown">
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-method">
+                    <label>Phương thức thanh toán:</label>
+                    <div>
+                        <input name="method" type="radio" id="bidv" checked="checked">
+                        <label for="bidv">BIDV</label>
+                    </div>
+                    <div>
+                        <input name="method" type="radio" id="cash" required>
+                        <label for="cash">Tiền mặt</label>
+                    </div>
+                    <div>
+                        <input name="method" type="radio" id="momo" required>
+                        <label for="momo">MOMO</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button id="checkout-btn">Thanh toán</button>
+            <button onclick="location.href='../gio-hang/gio-hang.html'">Hủy</button>
+        </div>
+    </div>
+
+<!-- Footer(Không thay đổi phần này) -->
+    <div id="footer"></div>
+</body>
+
+</html>

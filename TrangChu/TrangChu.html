@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="../js/loadComponents.js" defer></script>
+    <script src="../js/bannerHandler.js" defer></script>
+    <script src="../js/productHandler.js" defer></script>
+    <script src="../js/bestSellerHandler.js" defer></script>
+    <script src="../js/logoutHandler.js" defer></script>
+
+    <!-- Nhớ đổi tên file css tương ứng -->
+    <link rel="stylesheet" href="./TrangChu.css">
+</head>
+
+<body>
+    <!-- Header(Không thay đổi phần này) -->
+    <div id="header"></div>
+
+    <!-- Main(Thay đổi phần này tùy theo trang) -->
+    <div id="main">
+        <div class="banner">
+            <div class="banner-images">
+                <img src="../assets/banner/sale1.png" alt="Sale 1">
+                <img src="../assets/banner/sale2.png" alt="Sale 2">
+                <img src="../assets/banner/sale3.png" alt="Sale 3">
+            </div>
+            <div class="banner-dots"></div>
+        </div>
+        <h2>SẢN PHẨM BÁN CHẠY NHẤT</h2>
+        <div class="best-seller-container">
+        </div>
+        <h2>ĐÁNH GIÁ NỔI BẬT</h2>
+        <div class="highlighted-review">
+            <div class="review">
+                <div class="review__user">
+                    <img src="../assets/user/meo.png">
+                    <p class="review__user-name">Trem Don</p>
+                </div>
+                <div class="review__content">
+                    <div>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                    <p>
+                        Nếu bạn đang tìm một món ăn truyền thống đậm đà hương vị Việt Nam,
+                        thì bánh canh chắc chắn là một sự lựa chọn tuyệt vời.
+                        Từ sợi bánh canh mềm mịn đến nước lèo đậm đà,
+                        mọi thứ đều hòa quyện hoàn hảo để tạo nên một bát bánh canh ngon khó cưỡng.
+                        Nước lèo có vị ngọt tự nhiên từ xương hầm và gia vị được nêm nếm vừa phải,
+                        mang đến cảm giác ấm áp và dễ chịu.
+                        Sợi bánh canh, dù là làm từ bột gạo hay bột mì,
+                        đều giữ được độ dai vừa đủ, không bị bở.
+                    </p>
+                </div>
+            </div>
+            <button class="next-btn">
+                <i class="ri-arrow-right-wide-line"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer(Không thay đổi phần này) -->
+    <div id="footer"></div>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+/* Import các file css của components */
+@import url('../components/header/header.css');
+@import url('../components/footer/footer.css');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Layout */
+#main {
+    margin:0 auto;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+/* Product Images */
+.product-images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.thumbnail-images {
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail-images img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.thumbnail-images img:hover {
+    border-color: #4CAF50;
+}
+
+/* Product Details */
+.product-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product-details h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    font-size: 1.2em;
+}
+
+.price {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.new-price {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.old-price {
+    color: #777;
+    text-decoration: line-through;
+}
+
+/* Quantity Selector */
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-btn {
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quantity input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="number"] {
+    padding: 5px 10px;
+}
+
+/* Remove up and down button of input number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.add-to-cart, .buy-now {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+}
+
+.buy-now {
+    background-color: #FF5722;
+}
+
+.add-to-cart:hover {
+    background-color: #388E3C;
+}
+
+.buy-now:hover {
+    background-color: #E64A19;
+}
+
+/* Product Info, Description, and Reviews */
+.product-info, .product-description, .product-reviews {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-info td {
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 1em;
+}
+
+.product-description h3, .product-reviews h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-description p, .product-description ul {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #000;
+}
+
+.product-description ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Reviews */
+.review {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.review-count {
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.review-author {
+    font-weight: bold;
+    font-size: 1em;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+
+.review-text {
+    font-size: 1em;
+    color: #000;
+    line-height: 1.4;
+}
+
+.review-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.review-images img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.review-images img:hover {
+    border-color: #4CAF50;
+}

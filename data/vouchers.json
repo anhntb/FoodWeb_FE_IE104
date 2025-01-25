@@ -1,0 +1,64 @@
+{
+  "vouchers": [
+    {
+      "id": 1,
+      "code": "GIAM15",
+      "description": "Giảm 15% cho đơn tối thiểu 75k",
+      "image": "../assets/background/background.jpg",
+      "minOrder": 75000,
+      "discountPercent": 15,
+      "expiredDate": "2025-01-01",
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "code": "GIAM20",
+      "description": "Giảm 20% cho đơn tối thiểu 100k",
+      "image": "../assets/background/background.jpg",
+      "minOrder": 100000,
+      "discountPercent": 20,
+      "expiredDate": "2025-01-01",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "code": "GIAM25",
+      "description": "Giảm 25% cho đơn tối thiểu 125k",
+      "image": "../assets/background/background.jpg",
+      "minOrder": 125000,
+      "discountPercent": 25,
+      "expiredDate": "2025-01-01",
+      "status": "active"
+    },
+    {
+      "id": 4,
+      "code": "GIAM30",
+      "description": "Giảm 30% cho đơn tối thiểu 150k",
+      "image": "../assets/background/background.jpg",
+      "minOrder": 150000,
+      "discountPercent": 30,
+      "expiredDate": "2025-01-01",
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "code": "GIAM25",
+      "description": "Giảm 25% cho đơn tối thiểu 125k",
+      "image": "../assets/background/background.jpg",
+      "minOrder": 125000,
+      "discountPercent": 25,
+      "expiredDate": "2025-01-01",
+      "status": "active"
+    },
+    {
+      "id": 6,
+      "code": "GIAM15",
+      "description": "Giảm 15% cho đơn tối thiểu 75k",
+      "image": "../assets/background/background.jpg",
+      "minOrder": 75000,
+      "discountPercent": 15,
+      "expiredDate": "2025-01-01",
+      "status": "active"
+    }
+  ]
+}

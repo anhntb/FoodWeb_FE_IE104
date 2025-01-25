@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhap-ma-code</title>
+    <link rel="stylesheet" href="./ma-code.css">
+    <script src="../js/authHandler.js" defer></script>
+    <script src="../js/verifyCodeHandler.js" defer></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1> Nhập mã code </h1>
+        <p>Mời bạn nhập mã code mà chúng tôi đã cung cấp cho bạn thông qua gmail </p>
+        <form id="verifyCodeForm">
+            <label for="code">Nhập mã code:</label>
+            <input type="text" id="code" name="code" maxlength="6" required>
+            <button id="verifyCodeBtn" type="submit">Xác nhận</button>
+        </form>
+    </div>
+</body>
+
+</html>

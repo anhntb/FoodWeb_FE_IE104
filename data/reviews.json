@@ -1,0 +1,54 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "userId": 1,
+      "foodId": 1,
+      "orderId": 1,
+      "rating": 5,
+      "comment": "1111",
+      "image": "../assets/food/banhcuon.jpg",
+      "createdAt": "2024-12-05T11:56:08.532Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "foodId": 1,
+      "orderId": 2,
+      "rating": 1,
+      "comment": "Dở",
+      "image": "../assets/food/banhcuon.jpg",
+      "createdAt": "2024-12-05T11:56:54.776Z"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "foodId": 2,
+      "orderId": 4,
+      "rating": 5,
+      "comment": "Quá ngon",
+      "image": "../assets/food/banhep.jpg",
+      "createdAt": "2024-12-05T14:10:40.695Z"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "foodId": 1,
+      "orderId": 9,
+      "rating": 1,
+      "comment": "11",
+      "image": "../assets/food/banhcuon.jpg",
+      "createdAt": "2024-12-05T14:58:28.967Z"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "foodId": 1,
+      "orderId": 19,
+      "rating": 4,
+      "comment": "aa",
+      "image": "../assets/food/banhcuon.jpg",
+      "createdAt": "2024-12-07T01:34:55.485Z"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết Đánh giá</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="../js/loadComponents.js" defer></script>
+    <script src="../js/logoutHandler.js" defer></script>
+    <!-- Nhớ đổi tên file css tương ứng -->
+    <link rel="stylesheet" href="./DanhMucDanhGia.css">
+</head>
+
+<body>
+<!-- Header(Không thay đổi phần này) -->
+    <div id="header"></div>
+
+<!-- Main(Thay đổi phần này tùy theo trang) -->
+    <div id="main">
+        <div class="post-detail">
+            <h2>Tổng Hợp Những Món Ăn Việt Nam Nổi Tiếng Thế Giới</h2>
+            <p><i>Tác giả: Nguyễn Văn A - <span>Ngày đăng: 04/12/2024</span></i></p>
+            <img src="../assets/img/top-10-loai-banh-mi.png">
+            <p>
+                Ẩm thực Việt Nam từ lâu đã gây ấn tượng mạnh mẽ trên bản đồ ẩm thực quốc tế nhờ sự kết hợp hài hòa giữa hương vị, nguyên liệu tươi ngon và cách chế biến tinh tế.
+                <br>Dưới đây là những món ăn Việt Nam nổi tiếng và được yêu thích trên toàn thế giới:
+            </p>
+            <h3>Phở</h3>
+            <img src="../assets/food/pho.png" alt="">
+            <p>
+                Phở, biểu tượng ẩm thực Việt Nam, là món ăn không thể bỏ qua khi nhắc đến văn hóa Việt. 
+                Món ăn gồm bánh phở mềm mịn, nước dùng thanh ngọt được hầm từ xương bò hoặc gà, kết hợp với các loại gia vị như quế, hồi, gừng, và hành.
+                Phở bò và phở gà là hai phiên bản phổ biến nhất, 
+                và cả hai đều được yêu thích từ đường phố Hà Nội đến các nhà hàng cao cấp tại Paris hay New York.
+            </p>
+            <h3>2. Gỏi Cuốn</h3>
+            <img src="../assets/food/banhcuon.jpg" alt="">
+            <p>
+                Gỏi cuốn là món ăn nhẹ, thanh mát, với lớp bánh tráng cuốn bên ngoài và nhân tôm, thịt, bún, cùng các loại rau sống bên trong. 
+                Khi ăn, gỏi cuốn thường được chấm với nước mắm pha hoặc nước chấm đậu phộng, tạo nên hương vị độc đáo mà không ngán.
+            </p>
+            <h3>3. Bánh Mì</h3>
+            <img src="../assets/food/banhmi.jpg" alt="">
+            <p>
+            Bánh mì Việt Nam là một trong những món ăn đường phố ngon nhất thế giới. 
+            Với lớp vỏ bánh giòn tan, nhân bên trong gồm thịt nguội, pate, thịt nướng, kèm theo rau sống, dưa chua, và nước sốt đặc trưng, bánh mì đã chinh phục khẩu vị của nhiều thực khách quốc tế. 
+            Đây là món ăn nhanh gọn, tiện lợi, và đầy đủ dinh dưỡng.
+            </p>
+            <h3>4. Bánh Ép</h3>
+            <img src="../assets/food/banhep.jpg" alt="">
+            <p>
+                Bánh ép là một món ăn đặc sản của miền Trung (như Huế), với lớp bánh mỏng, dai dai từ bột lọc, kết hợp thịt, trứng, hoặc topping đa dạng.
+                Bánh được ép nóng tạo mùi thơm hấp dẫn. Món này chấm nước mắm chua ngọt rất hợp vị.
+            </p>
+        </div>
+        <div class="search-latest-post">
+            <div class="search">
+                <i class="ri-search-2-line"></i>
+                <input type="text" placeholder="Hãy cho tôi biết bạn đang cần gì?">
+            </div>
+            <div class="latest-post">
+                <h3>Bài viết gần đây:</h3>
+                <div class="mini-post">
+                    <img src="../assets/food/banhcuon.jpg">
+                    <div class="mini-post__content">
+                        <h4><a href="ChiTietDanhGia.html">Bánh cuốn Việt Nam lọt top 10 món ăn hấp dẫn nhất thế giới</a></h4>
+                        <p>Tác giả: Nguyễn Văn Văn A</p>
+                    </div>
+                </div>
+                <div class="mini-post">
+                    <img src="../assets/danhgia/mieng.png">
+                    <div class="mini-post__content">
+                        <h4><a href="ChiTietDanhGia.html">Miến trộn – ngõ 252 Tây Sơn, Đống Đa</a></h4>
+                        <p>Tác giả: Nguyễn Văn Văn A</p>
+                    </div>
+                </div>
+                <div class="mini-post">
+                    <img src="../assets/danhgia/bo.png">
+                    <div class="mini-post__content">
+                        <h4><a href="ChiTietDanhGia.html">Bò nướng lá lốt & Bò nướng mỡ chài 330 Bạch Mai</a></h4>
+                        <p>Tác giả: Nguyễn Văn Văn A</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Khi click vào bài viết thì di chuyển đến trang "Chi tiết Đánh giá của nó" -->
+
+<!-- Footer(Không thay đổi phần này) -->
+    <div id="footer"></div>
+</body>
+
+</html>

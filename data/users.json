@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "email": "vchieu1108@gmail.com",
+      "profile": {
+        "fullName": "Hieu",
+        "phone": "0942293549",
+        "birthday": "2024-12-04",
+        "gender": "male"
+      },
+      "avatar": "../assets/background/background2.jpg"
+    },
+    {
+      "id": 2,
+      "username": "admin1",
+      "password": "Hieu@12345",
+      "email": "john139120@gmail.com",
+      "profile": {
+        "fullName": "1",
+        "phone": "0942293549",
+        "birthday": "2024-11-07",
+        "gender": "male"
+      },
+      "avatar": "../assets/background/background.jpg"
+    },
+    {
+      "id": 3,
+      "username": "admin12345",
+      "password": "Hieu12345@",
+      "email": "a@gmail.com",
+      "profile": {
+        "fullName": "Hieu",
+        "phone": "0123456789",
+        "birthday": "2004-08-11",
+        "gender": "male"
+      }
+    }
+  ]
+}

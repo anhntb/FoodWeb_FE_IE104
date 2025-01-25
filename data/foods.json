@@ -1,0 +1,359 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Bánh cuốn",
+      "price": 25000,
+      "oldPrice": 35000,
+      "image": "../assets/food/banhcuon.jpg",
+      "category": "dryfood",
+      "rating": 3,
+      "review": 4,
+      "sold": 511,
+      "remain": 39,
+      "descriptions": {
+        "description": "Là món ăn đặc trưng của Việt Nam, được làm từ bột gạo mỏng mịn cuộn nhân thịt và mộc nhĩ, hấp chín, kèm nước mắm chấm đậm đà.",
+        "features": [
+          "Hương vị ngon miệng, hấp dẫn.",
+          "Được làm từ nguyên liệu tự nhiên, an toàn cho sức khỏe.",
+          "Phù hợp với mọi lứa tuổi và các dịp tụ họp gia đình."
+        ]
+      },
+      "details": {
+        "origin": "Việt Nam",
+        "taste": "Ngọt",
+        "ingredients": "100% tự nhiên",
+        "preservation": "Bảo quản ở nhiệt độ thường"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Bánh ép",
+      "price": 35000,
+      "image": "../assets/food/banhep.jpg",
+      "category": "dryfood",
+      "rating": 5,
+      "review": 1,
+      "sold": 86,
+      "remain": 74,
+      "descriptions": {
+        "description": "Là món ăn đặc trưng của Việt Nam, được làm từ bột gạo mỏng mịn cuộn nhân thịt và mộc nhĩ, hấp chín, kèm nước mắm chấm đậm đà.",
+        "features": [
+          "Hương vị ngon miệng, hấp dẫn.",
+          "Được làm từ nguyên liệu tự nhiên, an toàn cho sức khỏe.",
+          "Phù hợp với mọi lứa tuổi và các dịp tụ họp gia đình."
+        ]
+      },
+      "details": {
+        "origin": "Việt Nam",
+        "taste": "Ngọt",
+        "ingredients": "100% tự nhiên",
+        "preservation": "Bảo quản ở nhiệt độ thường"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Bánh mì",
+      "price": 20000,
+      "image": "../assets/food/banhmi.jpg",
+      "category": "dryfood",
+      "rating": 0,
+      "review": 0,
+      "sold": 83,
+      "remain": 92,
+      "description": "Là món ăn đặc trưng của Việt Nam, được làm từ bột gạo mỏng mịn cuộn nhân thịt và mộc nhĩ, hấp chín, kèm nước mắm chấm đậm đà.",
+      "details": {
+        "origin": "Việt Nam",
+        "taste": "Ngọt",
+        "ingredients": "100% tự nhiên",
+        "preservation": "Bảo quản ở nhiệt độ thường"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Bánh canh",
+      "price": 30000,
+      "oldPrice": null,
+      "image": "../assets/food/banhcanh.jpg",
+      "category": "soupyfood",
+      "rating": 0,
+      "review": 0,
+      "sold": 11,
+      "remain": 99,
+      "descriptions": {
+        "description": "Là món ăn đặc trưng của Việt Nam, được làm từ bột gạo mỏng mịn cuộn nhân thịt và mộc nhĩ, hấp chín, kèm nước mắm chấm đậm đà.",
+        "features": [
+          "Hương vị ngon miệng, hấp dẫn.",
+          "Được làm từ nguyên liệu tự nhiên, an toàn cho sức khỏe.",
+          "Phù hợp với mọi lứa tuổi và các dịp tụ họp gia đình."
+        ]
+      },
+      "details": {
+        "origin": "Việt Nam",
+        "taste": "Ngọt",
+        "ingredients": "100% tự nhiên",
+        "preservation": "Bảo quản ở nhiệt độ thường"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Hủ tiếu",
+      "price": 20000,
+      "oldPrice": null,
+      "image": "../assets/food/hu-tieu.png",
+      "category": "soupyfood",
+      "rating": 0,
+      "review": 0,
+      "sold": 17,
+      "remain": 98,
+      "descriptions": {
+        "description": "Là món ăn đặc trưng của Việt Nam, được làm từ bột gạo mỏng mịn cuộn nhân thịt và mộc nhĩ, hấp chín, kèm nước mắm chấm đậm đà.",
+        "features": [
+          "Hương vị ngon miệng, hấp dẫn.",
+          "Được làm từ nguyên liệu tự nhiên, an toàn cho sức khỏe.",
+          "Phù hợp với mọi lứa tuổi và các dịp tụ họp gia đình."
+        ]
+      },
+      "details": {
+        "origin": "Việt Nam",
+        "taste": "Ngọt",
+        "ingredients": "100% tự nhiên",
+        "preservation": "Bảo quản ở nhiệt độ thường"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Hoành thánh",
+      "price": 18000,
+      "oldPrice": null,
+      "image": "../assets/food/hoanhthanh.png",
+      "category": "soupyfood",
+      "rating": 0,
+      "review": 0,
+      "sold": 80,
+      "remain": 95,
+      "descriptions": {
+        "description": "Là món ăn đặc trưng của Việt Nam, được làm từ bột gạo mỏng mịn cuộn nhân thịt và mộc nhĩ, hấp chín, kèm nước mắm chấm đậm đà.",
+        "features": [
+          "Hương vị ngon miệng, hấp dẫn.",
+          "Được làm từ nguyên liệu tự nhiên, an toàn cho sức khỏe.",
+          "Phù hợp với mọi lứa tuổi và các dịp tụ họp gia đình."
+        ]
+      },
+      "details": {
+        "origin": "Việt Nam",
+        "taste": "Ngọt",
+        "ingredients": "100% tự nhiên",
+        "preservation": "Bảo quản ở nhiệt độ thường"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Phở bò",
+      "price": 36000,
+      "oldPrice": null,
+      "image": "../assets/food/pho.png",
+      "category": "soupyfood",
+      "rating": 0,
+      "review": 0,
+      "sold": 27,
+      "remain": 96,
+      "descriptions": {
+        "description": "Là món ăn đặc trưng của Việt Nam, được làm từ bột gạo mỏng mịn cuộn nhân thịt và mộc nhĩ, hấp chín, kèm nước mắm chấm đậm đà.",
+        "features": [
+          "Hương vị ngon miệng, hấp dẫn.",
+          "Được làm từ nguyên liệu tự nhiên, an toàn cho sức khỏe.",
+          "Phù hợp với mọi lứa tuổi và các dịp tụ họp gia đình."
+        ]
+      },
+      "details": {
+        "origin": "Việt Nam",
+        "taste": "Ngọt",
+        "ingredients": "100% tự nhiên",
+        "preservation": "Bảo quản ở nhiệt độ thường"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Quẩy giòn",
+      "price": 5000,
+      "oldPrice": null,
+      "image": "../assets/food/quaygion.png",
+      "category": "sidedish",
+      "rating": 0,
+      "review": 0,
+      "sold": 48,
+      "remain": 88,
+      "descriptions": {
+        "description": "Là món ăn đặc trưng của Việt Nam, được làm từ bột gạo mỏng mịn cuộn nhân thịt và mộc nhĩ, hấp chín, kèm nước mắm chấm đậm đà.",
+        "features": [
+          "Hương vị ngon miệng, hấp dẫn.",
+          "Được làm từ nguyên liệu tự nhiên, an toàn cho sức khỏe.",
+          "Phù hợp với mọi lứa tuổi và các dịp tụ họp gia đình."
+        ]
+      },
+      "details": {
+        "origin": "Việt Nam",
+        "taste": "Ngọt",
+        "ingredients": "100% tự nhiên",
+        "preservation": "Bảo quản ở nhiệt độ thường"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Nem rán",
+      "price": 15000,
+      "oldPrice": null,
+      "image": "../assets/food/nem.png",
+      "category": "sidedish",
+      "rating": 0,
+      "review": 0,
+      "sold": 25,
+      "remain": 100,
+      "descriptions": {
+        "description": "Là món ăn đặc trưng của Việt Nam, được làm từ bột gạo mỏng mịn cuộn nhân thịt và mộc nhĩ, hấp chín, kèm nước mắm chấm đậm đà.",
+        "features": [
+          "Hương vị ngon miệng, hấp dẫn.",
+          "Được làm từ nguyên liệu tự nhiên, an toàn cho sức khỏe.",
+          "Phù hợp với mọi lứa tuổi và các dịp tụ họp gia đình."
+        ]
+      },
+      "details": {
+        "origin": "Việt Nam",
+        "taste": "Ngọt",
+        "ingredients": "100% tự nhiên",
+        "preservation": "Bảo quản ở nhiệt độ thường"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Bánh đa",
+      "price": 3000,
+      "oldPrice": null,
+      "image": "../assets/food/banhda.png",
+      "category": "sidedish",
+      "rating": 0,
+      "review": 0,
+      "sold": 86,
+      "remain": 97,
+      "descriptions": {
+        "description": "Là món ăn đặc trưng của Việt Nam, được làm từ bột gạo mỏng mịn cuộn nhân thịt và mộc nhĩ, hấp chín, kèm nước mắm chấm đậm đà.",
+        "features": [
+          "Hương vị ngon miệng, hấp dẫn.",
+          "Được làm từ nguyên liệu tự nhiên, an toàn cho sức khỏe.",
+          "Phù hợp với mọi lứa tuổi và các dịp tụ họp gia đình."
+        ]
+      },
+      "details": {
+        "origin": "Việt Nam",
+        "taste": "Ngọt",
+        "ingredients": "100% tự nhiên",
+        "preservation": "Bảo quản ở nhiệt độ thường"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Bánh flan",
+      "price": 6000,
+      "oldPrice": null,
+      "image": "../assets/food/banhflan.jpg",
+      "category": "dessert",
+      "rating": 0,
+      "review": 0,
+      "sold": 213,
+      "remain": 20,
+      "descriptions": {
+        "description": "Là món ăn đặc trưng của Việt Nam, được làm từ bột gạo mỏng mịn cuộn nhân thịt và mộc nhĩ, hấp chín, kèm nước mắm chấm đậm đà.",
+        "features": [
+          "Hương vị ngon miệng, hấp dẫn.",
+          "Được làm từ nguyên liệu tự nhiên, an toàn cho sức khỏe.",
+          "Phù hợp với mọi lứa tuổi và các dịp tụ họp gia đình."
+        ]
+      },
+      "details": {
+        "origin": "Việt Nam",
+        "taste": "Ngọt",
+        "ingredients": "100% tự nhiên",
+        "preservation": "Bảo quản ở nhiệt độ thường"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Tàu hủ",
+      "price": 18000,
+      "oldPrice": null,
+      "image": "../assets/food/tau-hu.png",
+      "category": "dessert",
+      "rating": 0,
+      "review": 0,
+      "sold": 51,
+      "remain": 94,
+      "descriptions": {
+        "description": "Là món ăn đặc trưng của Việt Nam, được làm từ bột gạo mỏng mịn cuộn nhân thịt và mộc nhĩ, hấp chín, kèm nước mắm chấm đậm đà.",
+        "features": [
+          "Hương vị ngon miệng, hấp dẫn.",
+          "Được làm từ nguyên liệu tự nhiên, an toàn cho sức khỏe.",
+          "Phù hợp với mọi lứa tuổi và các dịp tụ họp gia đình."
+        ]
+      },
+      "details": {
+        "origin": "Việt Nam",
+        "taste": "Ngọt",
+        "ingredients": "100% tự nhiên",
+        "preservation": "Bảo quản ở nhiệt độ thường"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Sinh tố bơ",
+      "price": 30000,
+      "oldPrice": null,
+      "image": "../assets/food/sinhtobo.png",
+      "category": "drinks",
+      "rating": 0,
+      "review": 0,
+      "sold": 120,
+      "remain": 0,
+      "descriptions": {
+        "description": "Là món ăn đặc trưng của Việt Nam, được làm từ bột gạo mỏng mịn cuộn nhân thịt và mộc nhĩ, hấp chín, kèm nước mắm chấm đậm đà.",
+        "features": [
+          "Hương vị ngon miệng, hấp dẫn.",
+          "Được làm từ nguyên liệu tự nhiên, an toàn cho sức khỏe.",
+          "Phù hợp với mọi lứa tuổi và các dịp tụ họp gia đình."
+        ]
+      },
+      "details": {
+        "origin": "Việt Nam",
+        "taste": "Ngọt",
+        "ingredients": "100% tự nhiên",
+        "preservation": "Bảo quản ở nhiệt độ thường"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Nước mía tắc",
+      "price": 10000,
+      "oldPrice": null,
+      "image": "../assets/food/ncmia.png",
+      "category": "drinks",
+      "rating": 0,
+      "review": 0,
+      "sold": 54,
+      "remain": 82,
+      "descriptions": {
+        "description": "Là món ăn đặc trưng của Việt Nam, được làm từ bột gạo mỏng mịn cuộn nhân thịt và mộc nhĩ, hấp chín, kèm nước mắm chấm đậm đà.",
+        "features": [
+          "Hương vị ngon miệng, hấp dẫn.",
+          "Được làm từ nguyên liệu tự nhiên, an toàn cho sức khỏe.",
+          "Phù hợp với mọi lứa tuổi và các dịp tụ họp gia đình."
+        ]
+      },
+      "details": {
+        "origin": "Việt Nam",
+        "taste": "Ngọt",
+        "ingredients": "100% tự nhiên",
+        "preservation": "Bảo quản ở nhiệt độ thường"
+      }
+    }
+  ]
+}

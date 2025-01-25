@@ -1,0 +1,94 @@
+/* Footer */
+footer {
+    background-color: #FAB12F;
+    color: #fff;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #fff;
+    width: 100%;
+    font-family: "Lora", serif;
+    position: sticky;
+    bottom: 0;
+}
+
+.footer-container i {
+    margin-right: 5px;
+}
+
+.footer-container {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px 20px;
+    text-align: left;
+}
+
+.footer-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.content-footer {
+    display: flex;
+    align-items: center; /* Căn giữa hình ảnh và văn bản theo trục dọc */
+    gap: 20px; /* Khoảng cách giữa hình ảnh và văn bản */
+}
+
+/* Căn chỉnh hình ảnh */
+.content-footer img {
+    width: 100px; /* Kích thước hình ảnh */
+    height: auto; /* Tự động điều chỉnh chiều cao theo tỉ lệ */
+    border-radius: 8px; /* Thêm bo góc nếu cần */
+}
+
+/* Căn chỉnh văn bản */
+.content-footer p {
+    flex: 1; /* Để văn bản chiếm không gian còn lại */
+    margin: 0; /* Xóa khoảng cách mặc định của <p> */
+    color: #fff;
+}
+.footer-container p,
+.footer-container ul {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.footer-container ul li {
+    margin-bottom: 8px;
+}
+
+.footer-container ul li a,
+.footer-container .social-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-container ul li a:hover,
+.footer-container .social-list a:hover {
+    color: #f37a09;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-container {
+        margin: 10px 0;
+    }
+}

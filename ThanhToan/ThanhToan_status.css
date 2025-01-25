@@ -1,0 +1,27 @@
+.container{
+    margin: 10% auto auto;
+    display: grid;
+    background-color: whitesmoke;
+    width: fit-content;
+    justify-content: center;
+    justify-items: center;
+    border-radius: 10px;
+    padding: 30px 50px;
+}
+
+.container i{
+    font-size: 200px;
+}
+
+.container p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container--success i{
+    color: green;
+}
+
+.container--fail i{
+    color: brown;
+}

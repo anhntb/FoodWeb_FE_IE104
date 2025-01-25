@@ -1,0 +1,12 @@
+/* Import các file css của components */
+@import url('../components/header/header.css');
+@import url('../components/footer/footer.css');
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Bắt đầu từ đây là thiết kế riêng cho từng trang*/

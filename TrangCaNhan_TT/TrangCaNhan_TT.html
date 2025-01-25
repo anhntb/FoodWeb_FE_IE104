@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="../js/loadComponents.js" defer></script>
+    <script src="../js/profileHandler.js" defer></script>
+    <script src="../js/logoutHandler.js" defer></script>
+    <link rel="stylesheet" href="./TrangCaNhan_TT.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div id="main">
+        <div class="info">
+            <img class="info__user-image" alt="User Image">
+            <button data-section="detail-info" class="nav-btn active">Thông tin cá nhân</button>
+            <button data-section="voucher-container" class="nav-btn">Kho voucher</button>
+            <button data-section="track-order" class="nav-btn">Theo dõi đơn hàng</button>
+        </div>
+
+        <div id="dynamic-content">
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        document.querySelectorAll('.nav-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+                document.querySelectorAll('.content-section').forEach(section => section.classList.remove('active'));
+
+                button.classList.add("active");
+                const sectionId = button.getAttribute("data-section");
+                document.getElementById(sectionId).classList.add("active");
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh mục món ăn</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="../js/loadComponents.js" defer></script>
+  <script src="../js/menuHandler.js" defer></script>
+  <script src="../js/productHandler.js" defer></script>
+  <script src="../js/logoutHandler.js" defer></script>
+  <!-- Nhớ đổi tên file css tương ứng -->
+  <link rel="stylesheet" href="./Mon-an.css">
+</head>
+
+<body>
+  <!-- Header(Không thay đổi phần này) -->
+  <div id="header"></div>
+
+  <!-- Main(Thay đổi phần này tùy theo trang) -->
+  <div id="main">
+    <!-- Mon-kho -->
+
+    <section id="dryfood" class="Dryfood">
+      <h2>MÓN KHÔ</h2>
+      <div class="custom-dropdown">
+        <button class="dropdown-btn">Giá thấp đến cao <i class="ri-arrow-down-s-line"></i></button>
+        <div class="dropdown-content">
+          <div class="dropdown-item" data-value="grid">Giá thấp đến cao</div>
+          <div class="dropdown-item" data-value="list">Giá cao đến thấp</div>
+        </div>
+      </div>
+    </section>
+    <section class="products" data-category="dryfood"></section>
+
+
+    <!-- Mon-nuoc -->
+    <section id="soupyfood" class="Dryfood">
+      <h2>MÓN NƯỚC</h2>
+      <div class="custom-dropdown">
+        <button class="dropdown-btn">Giá thấp đến cao <i class="ri-arrow-down-s-line"></i></button>
+        <div class="dropdown-content">
+          <div class="dropdown-item" data-value="grid">Giá thấp đến cao</div>
+          <div class="dropdown-item" data-value="list">Giá cao đến thấp</div>
+        </div>
+      </div>
+    </section>
+    <section class="products" data-category="soupyfood"></section>
+
+
+    <!-- Mon-an-kem -->
+    <section id="sidedish" class="Dryfood">
+      <h2> MÓN ĂN KÈM</h2>
+      <div class="custom-dropdown">
+        <button class="dropdown-btn">Giá thấp đến cao <i class="ri-arrow-down-s-line"></i></button>
+        <div class="dropdown-content">
+          <div class="dropdown-item" data-value="grid">Giá thấp đến cao</div>
+          <div class="dropdown-item" data-value="list">Giá cao đến thấp</div>
+        </div>
+      </div>
+    </section>
+    <section class="products" data-category="sidedish"></section>
+
+    <!-- Mon-trang-mieng -->
+    <section id="dessert" class="Dryfood">
+      <h2> MÓN TRÁNG MIỆNG</h2>
+      <div class="custom-dropdown">
+        <button class="dropdown-btn">Giá thấp đến cao <i class="ri-arrow-down-s-line"></i></button>
+        <div class="dropdown-content">
+          <div class="dropdown-item" data-value="grid">Giá thấp đến cao</div>
+          <div class="dropdown-item" data-value="list">Giá cao đến thấp</div>
+        </div>
+      </div>
+    </section>
+    <section class="products" data-category="dessert"></section>
+
+
+    <!-- Mon-an-kem -->
+    <section id="drinks" class="Dryfood">
+      <h2> NƯỚC GIẢI KHÁT</h2>
+      <div class="custom-dropdown">
+        <button class="dropdown-btn">Giá thấp đến cao <i class="ri-arrow-down-s-line"></i></button>
+        <div class="dropdown-content">
+          <div class="dropdown-item" data-value="grid">Giá thấp đến cao</div>
+          <div class="dropdown-item" data-value="list">Giá cao đến thấp</div>
+        </div>
+      </div>
+    </section>
+    <section class="products" data-category="drinks"></section>
+  </div>
+  <!-- Footer(Không thay đổi phần này) -->
+  <div id="footer"></div>
+</body>
+
+</html>

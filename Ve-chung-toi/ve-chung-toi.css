@@ -1,0 +1,245 @@
+@import url('../components/header/header.css');
+@import url('../components/footer/footer.css');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: Lora, serif;
+}
+#about, #products, #contact, #founders {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Lora, serif;
+        background-color: #ffffff;
+        border: 1px solid #FAB12F;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section, .products-section, .contact-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.about-content, .products-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-content {
+    align-items: center;
+}
+
+.image-container, .text-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 210px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.text-container h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.text-container p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.products-section h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.products-section p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.product-item {
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+}
+
+.product-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    max-width: 150px;
+    max-height: 150px;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+
+.contact-section h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-section p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: block;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.contact-item p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000;
+}
+
+.contact-item a {
+    color: #FAB12F;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .about-content, .product-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container, .text-container, .product-item {
+        max-width: 100%;
+    }
+
+    .product-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        flex: 1 1 100%;
+    }
+}
+
+/* Người Thành Lập Section */
+.founders-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.founders-section h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #000;
+}
+
+.founders-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.founder-item {
+    flex: 1 1 calc(33.33% - 30px);
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #FAB12F;
+    transition: all 0.3s ease;
+}
+
+.founder-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.founder-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #FAB12F;
+    margin-bottom: 20px;
+}
+
+.founder-text h3 {
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.founder-text p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000;
+}
+
+.founder-text strong {
+    color: #FAB12F;
+}
+
+@media (max-width: 768px) {
+    .founders-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .founder-item {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}

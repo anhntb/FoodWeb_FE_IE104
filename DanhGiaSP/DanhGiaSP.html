@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đánh giá sản phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="../js/loadComponents.js" defer></script>
+    <script src="../js/reviewHandler.js" defer></script>
+    <script src="../js/logoutHandler.js" defer></script>
+    <!-- Nhớ đổi tên file css tương ứng -->
+    <link rel="stylesheet" href="./DanhGiaSP.css">
+</head>
+
+<body>
+    <!-- Main(Thay đổi phần này tùy theo trang) -->
+    <div id="main">
+        <form id="reviewForm">
+            <h2>ĐÁNH GIÁ SẢN PHẨM</h2>
+            <div class="product-info">
+                <img id="product-image" src="">
+                <h3 id="product-name"></h3>
+            </div>
+            <div class="content">
+                <div class="rating-container">
+                    <p>Chất lượng sản phẩm:</p>
+                    <div class="stars">
+                        <i class="ri-star-line" data-rating="1"></i>
+                        <i class="ri-star-line" data-rating="2"></i>
+                        <i class="ri-star-line" data-rating="3"></i>
+                        <i class="ri-star-line" data-rating="4"></i>
+                        <i class="ri-star-line" data-rating="5"></i>
+                    </div>
+                </div>
+                <textarea id="review-content" placeholder="Viết đánh giá của bạn ở đây" required></textarea>
+                <div class="btn-container">
+                    <button type="submit" id="btn-complete">Hoàn thành</button>
+                    <button type="button" class="btn-cancel" onclick="window.history.back()">Hủy</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

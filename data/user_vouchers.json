@@ -1,0 +1,20 @@
+{
+  "userVouchers": [
+    {
+      "userId": 1,
+      "vouchers": []
+    },
+    {
+      "userId": 2,
+      "vouchers": [
+        2
+      ]
+    },
+    {
+      "userId": 3,
+      "vouchers": [
+        6
+      ]
+    }
+  ]
+}

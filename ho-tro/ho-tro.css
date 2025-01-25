@@ -1,0 +1,121 @@
+/* Import các file css của components */
+@import url('../components/header/header.css');
+@import url('../components/footer/footer.css');
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Bắt đầu từ đây là thiết kế riêng cho từng trang*/
+
+#main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px 20px;
+    margin: 0 auto;
+    flex: 1;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Lora, serif;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-section {
+    width: 48%;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: Lora, serif;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item .answer {
+    display: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #FAB12F;
+    font-size: 20px;
+    font-family: Lora, serif;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #FAB12F;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    padding: 5px;
+    font-family: Lora, serif;
+}
+
+.right-section {
+    width: 48%;
+}
+
+.menu-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px auto auto;
+    gap: 15px;
+    row-gap: 25px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu-categories h2 {
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}

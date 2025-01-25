@@ -1,0 +1,243 @@
+/* Import các file css của components */
+@import url('../components/header/header.css');
+@import url('../components/footer/footer.css');
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Bắt đầu từ đây là thiết kế riêng cho từng trang*/
+#main {
+    justify-self: center;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    row-gap: 30px;
+    font-family: lora, serif;
+}
+
+/* best-seller-container */
+.best-seller-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    row-gap: 70px;
+}
+
+h2 {
+    font-family: Lora, serif;
+    font-size: 28px;
+}
+
+.best-seller-container__product {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 15px;
+    border: 1px solid #FAB12F;
+    border-radius: 5px;
+    padding: 40px;
+    width: fit-content;
+}
+
+.best-seller-container__product img {
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.best-seller-container__product p {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Lora, serif;
+}
+
+.best-seller-container__product label {
+    font-family: Lora, serif;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.best-seller-container__product div {
+    display: flex;
+    align-items: center;
+}
+
+.ri-star-fill {
+    color: #fae570;
+    font-size: 25px;
+}
+
+.product-price {
+    font-size: 25px;
+    font-family: Lora, serif;
+    color: #ffab1a;
+}
+
+.cart-btn {
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.cart-btn i {
+    font-size: 25px;
+    border: 2px solid #FAB12F;
+    border-radius: 50%;
+    padding: 5px;
+    color: #FAB12F;
+}
+
+/* highlighted-review */
+.highlighted-review {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.review {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    border: 1px solid #FAB12F;
+    border-radius: 5px;
+    width: 70%;
+    padding: 20px 50px;
+}
+
+.review__user {
+    display: grid;
+    justify-items: center;
+    row-gap: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.review__user img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid #FAB12F;
+}
+
+.review__user-name {
+    font-size: 25px;
+    font-family: Lora, serif;
+}
+
+.review__content {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    row-gap: 10px;
+}
+
+.review__content i {
+    font-size: 25px;
+    color: #fae570;
+}
+
+.review__content p {
+    font-size: 18px;
+}
+
+/* Sự kiện */
+
+/* chỉnh lại màu */
+
+.cart-btn:hover {
+    color: orange;
+}
+
+/* Banner */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.banner-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-images img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.banner-images img.active {
+    opacity: 1;
+}
+
+.banner-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #FAB12F;
+}
+
+
+.product-name {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-name a {
+    color: #333;
+    text-decoration: none;
+}
+
+.product-name a:hover {
+    color: #ed8c05;
+}
+
+.product-rating {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.product-cart {
+    text-align: center;
+    color: #FAB12F;
+    font-size: 25px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #FAB12F;
+}

@@ -1,0 +1,195 @@
+/* Import các file css của components */
+@import url('../components/header/header.css');
+@import url('../components/footer/footer.css');
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Bắt đầu từ đây là thiết kế riêng cho từng trang*/
+#main{
+    justify-self: center;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+/* post-container */
+.post-container{
+    display: grid;
+    row-gap: 30px;
+    height: fit-content;
+    margin-right: 50px;
+    width: fit-content;
+}
+
+.post{
+    display: grid;
+    row-gap: 15px;
+    width: 650px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post img{
+    width: 500px;
+    height: 200px;
+    padding: 0 40px;
+    border-radius: 5px;
+    justify-items: center;
+}
+
+.post h2
+{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: lora, serif;
+}
+.post a
+{
+    text-decoration: none;
+    color: #FAB12F ;
+}
+.post a:hover
+{
+    color: #f37a09;
+}
+
+.post__content{
+    width: 100%;
+    font-size: 20px;
+}
+
+/* search-latest-post */
+.search-latest-post {
+    display: grid;
+    row-gap: 30px;
+    height: fit-content;
+    margin-left: 50px;
+}
+
+.search{
+    position: relative;
+    width: 450px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.search i{
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+}
+
+.search input{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    padding: 10px 20px 10px 40px;
+    border: 1px solid #ddd;
+    font-family: lora, serif;
+    background-color: transparent;
+}
+
+.search input::placeholder{
+    font-size: 20px;
+    font-family: lora, serif;
+}
+
+.search input:focus{
+    border: 2px solid #FAB12F;
+    outline: none;
+}
+
+/* bai viet gan day */
+.latest-post {
+    display: grid;
+    height: fit-content;
+    width: 450px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 20px;
+    row-gap: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.latest-post a
+{
+    text-decoration: none;
+    color: #FAB12F;
+}
+
+.latest-post a :hover
+{
+    color: #f37a09;
+}
+
+.mini-post {
+    display: flex;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.mini-post img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+
+}
+
+.mini-post__content {
+    display: grid;
+    align-content: center;
+    margin-left: 30px;
+}
+
+.mini-post h4 {
+    height: 60px;
+    overflow: auto;
+}
+
+.mini-post p{
+    font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* post-detail */
+.post-detail {
+    display: grid;
+    height: fit-content;
+    width: 750px;
+    row-gap: 20px;
+}
+
+.post-detail h3
+{   
+    font-size: 23px;
+    font-family: lora, serif;
+}
+
+.post-detail img{
+    width: 100%;
+} 
+
+.post-detail p{
+    font-size: 20px;
+    font-family: lora, serif;
+}

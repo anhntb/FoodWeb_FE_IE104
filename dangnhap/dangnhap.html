@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="./dangnhap.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="../js/authHandler.js" defer></script>
+    <script src="../js/loginHandler.js" defer></script>
+    <script src="../js/togglePasswordVisibility.js" defer></script>
+</head>
+
+<body>
+<div class="container">
+    <h1>ĐĂNG NHẬP</h1>
+    <form id="loginForm">
+        <label for="username">Tên đăng nhập:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Mật khẩu:</label>
+        <div class="password-field">
+            <input type="password" id="password" name="password" required>
+            <i class="ri-eye-off-line toggle-password"></i>
+        </div>
+        <br>
+        <button type="submit">Đăng nhập</button>
+        <br>
+        <div class="links">
+            <a href="../quen-mat-khau/quenmatkhau.html">Quên mật khẩu</a>
+            <p>Chưa có tài khoản? <a href="../dangky/dangky.html">Đăng ký</a></p>
+        </div>
+    </form>
+</div>
+</body>
+
+</html>

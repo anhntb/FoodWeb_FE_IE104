@@ -1,0 +1,166 @@
+/* Import các file css của components */
+@import url('../components/header/header.css');
+@import url('../components/footer/footer.css');
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Bắt đầu từ đây là thiết kế riêng cho từng trang*/
+body {
+    background-color: #FAB12F;
+}
+
+#main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: Lora, serif;
+    height: fit-content;
+}
+
+form {
+    display: grid;
+    margin-top: 50px;
+    width: fit-content;
+    padding: 20px 40px 20px 40px;
+    row-gap: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.product-info {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #FAB12F;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bolder
+}
+
+.content {
+    display: grid;
+    row-gap: 10px;
+    border-radius: 5px;
+    border: 1px solid #FAB12F;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+}
+
+i {
+    margin-left: 5px;
+    font-size: 20px;
+    color: #fad50a;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    border-radius: 5px;
+    width: 450px;
+    height: 150px;
+    padding: 15px;
+    font-size: 18px;
+    font-family: Lora, serif;
+    border: 1px solid #FAB12F;
+    resize: none;
+}
+
+textarea:focus {
+    border: 2px solid #FAB12F;
+    outline: none;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: right;
+    column-gap: 20px;
+}
+
+/* Định dạng các nút */
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Nút "Hoàn thành" */
+#btn-complete {
+    background-color: #FAB12F;
+    color: white;
+}
+
+/* Nút "Hoàn thành" khi hover */
+#btn-complete:hover {
+    background-color: #f37a09;
+    transform: scale(1.05);
+}
+
+#btn-complete:disabled {
+    background-color: #ddd;
+    color: #fff;
+    border: 2px solid #ddd;
+    cursor: not-allowed;
+}
+
+/* Nút "Hủy" */
+.btn-cancel {
+    background-color: #fff;
+    color: #FAB12F;
+    border: 1px solid #FAB12F;
+}
+
+/* Nút "Hủy" khi hover */
+.btn-cancel:hover {
+    background-color: #FAB12F;
+    color: white;
+    transform: scale(1.05);
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+}
+
+.stars i {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffd700;
+}
+
+.stars i:hover {
+    transform: scale(1.1);
+}

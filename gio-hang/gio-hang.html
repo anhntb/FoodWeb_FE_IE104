@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="../js/loadComponents.js" defer></script>
+    <!-- Nhớ đổi tên file css tương ứng -->
+    <link rel="stylesheet" href="./gio-hang.css">
+    <script src="../js/productHandler.js" defer></script>
+    <script src="../js/cartHandler.js" defer></script>
+    <script src="../js/quantityHandler.js" defer></script>
+    <script src="../js/logoutHandler.js" defer></script>
+</head>
+
+<body>
+    <!-- Header(Không thay đổi phần này) -->
+    <div id="header"></div>
+
+    <!-- Main(Thay đổi phần này tùy theo trang) -->
+    <div id="main">
+        <div class="cart-container">
+            <div class="cart-title">GIỎ HÀNG</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Chọn</th>
+                        <th>Sản phẩm</th>
+                        <th>Đơn giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                </tbody>
+            </table>
+            <div class="cart-footer">
+                <div class="select-all">
+                    <input type="checkbox" id="select-all" />
+                    <label for="select-all">Chọn tất cả</label>
+                    <button id="delete-selected">Xoá</button>
+                </div>
+                <div>
+                    Tổng cộng: <strong id="total-price">0đ</strong>
+                </div>
+                <div>
+                    <button id="checkout">Mua ngay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer(Không thay đổi phần này) -->
+    <div id="footer"></div>
+</body>
+
+</html>

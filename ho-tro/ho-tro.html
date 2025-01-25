@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="../js/loadComponents.js" defer></script>
+    <script src="../js/logoutHandler.js" defer></script>
+    <!-- Nhớ đổi tên file css tương ứng -->
+    <link rel="stylesheet" href="./ho-tro.css">
+</head>
+
+<body>
+<!-- Header(Không thay đổi phần này) -->
+<div id="header"></div>
+
+<!-- Main(Thay đổi phần này tùy theo trang) -->
+<div id="main">
+    <div class="container">
+        <!-- Left section (FAQ) -->
+        <div class="left-section">
+            <div class="faq-section">
+                <h2>Câu hỏi thường gặp</h2>
+                <div class="faq-item">
+                    <button class="toggle-btn">Làm thế nào để đặt hàng? +</button>
+                    <div class="answer">
+                        <p>
+                        Để đặt hàng, bạn chỉ cần thực hiện theo các bước sau: <br>
+                            1. Chọn món ăn yêu thích từ menu. <br>
+                            2. Thêm món vào giỏ hàng của bạn. <br>
+                            3. Kiểm tra lại giỏ hàng và xác nhận đơn hàng. <br>
+                            4. Chọn phương thức thanh toán (Thẻ tín dụng, ví điện tử hoặc COD). <br>
+                            5. Nhập thông tin giao hàng và thanh toán. <br>
+                            6. Thanh toán và đơn hàng. <br>
+                        Sau khi đơn hàng được xác nhận, bạn sẽ nhận được thông tin về thời gian giao hàng và trạng thái đơn hàng qua tin nhắn hoặc email.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="toggle-btn">Tôi có thể thanh toán bằng phương thức nào? +</button>
+                    <div class="answer">
+                        <p>
+                            Chúng tôi hỗ trợ các phương thức thanh toán sau: <br>
+                                <br><strong>Thẻ tín dụng:</strong> Chúng tôi chấp nhận thanh toán qua các loại thẻ tín dụng quốc tế như Visa, MasterCard, và American Express. <br>
+                                <br><strong>Ví điện tử:</strong> Bạn có thể thanh toán qua các ví điện tử như MoMo, ZaloPay, hoặc AirPay. <br>
+                                <br><strong>Thanh toán khi nhận hàng (COD):</strong> Bạn có thể chọn phương thức thanh toán khi nhận hàng, chỉ cần thanh toán cho người giao hàng khi bạn nhận món ăn. <br>
+                            Lưu ý: Đảm bảo rằng thông tin thanh toán của bạn chính xác để tránh gián đoạn trong quá trình giao dịch.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="toggle-btn">Khi nào đơn hàng của tôi sẽ được giao? +</button>
+                    <div class="answer">
+                        <p>Thời gian giao hàng phụ thuộc vào địa điểm và tình trạng giao hàng hiện tại: <br>
+                                <strong>Khu vực trung tâm:</strong> Thời gian giao hàng từ 30 phút đến 1 giờ. <br>
+                                <strong>Khu vực ngoại ô:</strong> Thời gian giao hàng có thể kéo dài từ 1 đến 2 giờ tùy thuộc vào quãng đường và tình trạng giao thông. <br>
+                                <strong>Khung giờ cao điểm:</strong> Vào các giờ ăn trưa hoặc tối, thời gian giao hàng có thể kéo dài hơn do lượng đơn hàng lớn. <br>
+                            Bạn sẽ nhận được thông báo về thời gian giao hàng dự kiến khi xác nhận đơn hàng.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <div class="menu-categories">
+                <h2>Danh mục đồ ăn</h2>
+                <div class="category">
+                    <div class="circle">
+                        <img src="../assets/food/banhcuon.jpg" alt="Category 1">
+                    </div>
+                    <p>Món khô</p>
+                </div>
+                <div class="category">
+                    <div class="circle">
+                        <img src="../assets/food/banhcanh.jpg" alt="Category 2">
+                    </div>
+                    <p>Món nước</p>
+                </div>
+                <div class="category">
+                    <div class="circle">
+                        <img src="../assets/food/banhflan.jpg" alt="Category 3">
+                    </div>
+                    <p>Món tráng miệng</p>
+                </div>
+                <div class="category">
+                    <div class="circle">
+                        <img src="../assets/food/tradaocamsa.png" alt="Category 4">
+                    </div>
+                    <p>Nước giải khát</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer(Không thay đổi phần này) -->
+<div id="footer"></div>
+</body>
+<script>
+    document.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        if (answer.style.display === 'none' || answer.style.display === '') {
+            answer.style.display = 'block';
+            btn.textContent = btn.textContent.replace('+', '-');
+        } else {
+            answer.style.display = 'none';
+            btn.textContent = btn.textContent.replace('-', '+');
+        }
+    });
+});
+
+</script>
+</html>
