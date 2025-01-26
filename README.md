@@ -34,7 +34,7 @@ Yêu cầu máy tính đã cài đặt [Node.js](https://nodejs.org/) để ch�
 * Bước 1: Thực hiện clone project về máy tính
 
 ```
-git clone https://github.com/Haryuya11/DO_AN_IE104.git 
+https://github.com/anhntb/FoodWeb_FE_IE104.git
 ```
 
 * Bước 2: Chạy lệnh sau để cài đặt các thư viện cần thiết
